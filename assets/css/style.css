@@ -4,6 +4,7 @@
   .w3-top {
     background-color: black;
     max-height: 100px;
+    color: whitesmoke;
   }
   
   .myNavbar {
@@ -23,12 +24,16 @@
     position: relative;
   }  
   
-body,h1,h2,h3,h4,h5,h6 {font-family: "Stylish", regular;}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Philosopher", sans-serif;}
 body, html {
   height: 100%;
-  color: #777;
+  color: rgb(43, 39, 39);
   line-height: 1.8;
   scroll-behavior: smooth;
+}
+
+em {
+  font-size: 20px;
 }
 
 /* Create a Parallax Effect */

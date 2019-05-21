@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <script src="assets/js/index.js"></script>
@@ -23,7 +23,7 @@
       <!-- <a class="logo-image">
         <img src="assets/images/primarycolors.jpg" class="img-fluid">
       </a> -->
-  
+
       <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-envelope"></i> CONTACT</a>
       <a href="#shop" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-th"></i> SHOP</a>
       <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-th"></i> PORTFOLIO</a>
@@ -51,7 +51,7 @@
   <!-- Container (About Section) -->
   <div class="w3-content w3-container w3-padding-64" id="about">
     <h3 class="w3-center">ABOUT ME</h3>
-    <p class="w3-center"><em>I love abstract art with bright colors</em></p>
+    <p class="w3-center"><em>I love creating beautiful, colorful abstract art</em></p>
     <p>Lorem ipsum dolor sit amet, populo assueverit comprehensam pri an, ei vim assentior omittantur philosophia. Iusto
       phaedrum qui ex, no probo ancillae adolescens vim. Pro id elit utroque, et mei eleifend comprehensam. Eam probo
       dolor noster te, mea fuisset praesent complectitur ex. Et vim recusabo inciderint. Regione nostrud eleifend nam
@@ -59,8 +59,8 @@
       stet viderer delectus ne. Eu duo inani verear imperdiet, mea in adhuc intellegebat.</p>
     <div class="w3-row">
       <div class="w3-col m6 w3-center w3-padding-large">
-        <img src="assets/images/HannaJennings.jpg" class="w3-round w3-image" alt="Hanna Jennings" width="400"
-          height="333">
+        <img src="assets/images/HannaJennings.jpg" class="w3-round w3-image" alt="Hanna Jennings"
+          style="width:100%; box-shadow: 2px 2px 2px 2px rgb(0, 0, 0)">
       </div>
 
       <!-- Hide this text on small devices -->
@@ -93,9 +93,12 @@
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-container">
       <div class="w3-content" style="max-width:1200px">
-        <img class="mySlides" src="assets/images/girlfriends.jpg" style="width:100%;display:none">
-        <img class="mySlides" src="assets/images/dog.jpg" style="width:100%">
-        <img class="mySlides" src="assets/images/boats.jpg" style="width:100%;display:none">
+        <img class="mySlides" src="assets/images/girlfriends.jpg"
+          style="width:100%;display:none; box-shadow: 2px 2px 2px 2px rgb(16, 137, 181)">
+        <img class="mySlides" src="assets/images/dog.jpg"
+          style="width:100%; box-shadow: 2px 2px 2px 2px rgb(23, 23, 216)">
+        <img class="mySlides" src="assets/images/boats.jpg"
+          style="width:100%;display:none; box-shadow: 2px 2px 2px 2px rgb(17, 135, 84)">
 
         <div class="w3-row-padding w3-section">
           <div class="w3-col s4">
@@ -111,6 +114,9 @@
               style="width:100%;cursor:pointer" onclick="currentDiv(3)">
           </div>
         </div>
+      </div>
+      <div class="w3-container w3-center">
+        <button class="w3-button w3-padding-large w3-blue w3-round" style="margin-top:64px">LOAD MORE</button>
       </div>
     </div>
 
@@ -142,47 +148,49 @@
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center">
       <div class="w3-col m3">
-        <img src="assets/images/p1.jpg" style="width:100%; box-shadow: 2px 2px 2px 2px rgb(148, 26, 30)"
+        <img src="assets/images/boats.jpg" style="width:100%; box-shadow: 2px 2px 2px 2px rgb(148, 26, 30)"
           onclick="onClick(this)" class="w3-hover-opacity" alt="Painting Title">
       </div>
 
       <div class="w3-col m3">
-        <img src="assets/images/p2.jpg" style="width:100%; box-shadow: 2px 2px 2px 2px rgb(148, 26, 30)"
+        <img src="assets/images/dog.jpg" style="width:100%; box-shadow: 2px 2px 2px 2px rgb(148, 26, 30)"
           onclick="onClick(this)" class="w3-hover-opacity" alt="Painting Title">
       </div>
 
       <div class="w3-col m3">
-        <img src="assets/images/p3.jpg" style="width:100%; box-shadow: 2px 2px 2px 2px rgb(148, 26, 30)"
+        <img src="assets/images/goldfish.jpg" style="width:100%; box-shadow: 2px 2px 2px 2px rgb(148, 26, 30)"
           onclick="onClick(this)" class="w3-hover-opacity" alt="Painting Title">
       </div>
 
       <div class="w3-col m3">
-        <img src="assets/images/p4.jpg" style="width:100%; box-shadow: 2px 2px 2px 2px rgb(148, 26, 30)"
+        <img src="assets/images/girlfriends.jpg" style="width:100%; box-shadow: 2px 2px 2px 2px rgb(148, 26, 30)"
           onclick="onClick(this)" class="w3-hover-opacity" alt="Painting Title">
       </div>
     </div>
 
     <div class="w3-row-padding w3-center w3-section">
       <div class="w3-col m3">
-        <img src="assets/images/p5.jpg" style="width:100%; box-shadow: 2px 2px 2px 2px rgb(148, 26, 30)"
+        <img src="assets/images/primarycolors.jpg" style="width:100%; box-shadow: 2px 2px 2px 2px rgb(148, 26, 30)"
           onclick="onClick(this)" class="w3-hover-opacity" alt="Painting Title">
       </div>
 
       <div class="w3-col m3">
-        <img src="assets/images/p6.jpg" style="width:100%; box-shadow: 2px 2px 2px 2px rgb(148, 26, 30)"
+        <img src="assets/images/girlfriends.jpg" style="width:100%; box-shadow: 2px 2px 2px 2px rgb(148, 26, 30)"
           onclick="onClick(this)" class="w3-hover-opacity" alt="Painting Title">
       </div>
 
       <div class="w3-col m3">
-        <img src="assets/images/p7.jpg" style="width:100%; box-shadow: 2px 2px 2px 2px rgb(148, 26, 30)"
+        <img src="assets/images/dog.jpg" style="width:100%; box-shadow: 2px 2px 2px 2px rgb(148, 26, 30)"
           onclick="onClick(this)" class="w3-hover-opacity" alt="Painting Title">
       </div>
 
       <div class="w3-col m3">
-        <img src="assets/images/p8.jpg" style="width:100%; box-shadow: 2px 2px 2px 2px rgb(148, 26, 30)"
+        <img src="assets/images/goldfish.jpg" style="width:100%; box-shadow: 2px 2px 2px 2px rgb(148, 26, 30)"
           onclick="onClick(this)" class="w3-hover-opacity" alt="Painting Title">
       </div>
-      <button class="w3-button w3-padding-large w3-light-grey w3-round" style="margin-top:64px">LOAD MORE</button>
+      <div class="w3-container w3-center">
+        <button class="w3-button w3-padding-large w3-blue w3-round" style="margin-top:64px">LOAD MORE</button>
+      </div>
     </div>
   </div>
 
@@ -210,7 +218,10 @@
 
     <div class="w3-row w3-padding-32 w3-section">
       <div class="w3-col m4 w3-container">
-        <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Austin&zoom=13&size=600x300&maptype=satellite
+        &markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
+        &markers=color:red%7Clabel:C%7C40.718217,-73.998284
+        &key=AIzaSyBhiTZvtJDGHfwobztpbyVucCo6QgsvOV0" alt="Austin" class="w3-image w3-round" style="width:100%">
       </div>
       <div class="w3-col m8 w3-panel">
         <div class="w3-large w3-margin-bottom">
@@ -230,7 +241,7 @@
             </div>
           </div>
           <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-right w3-section w3-round" type="submit">
+          <button class="w3-button w3-black w3-center w3-section w3-round" type="submit">
             <i class="fa fa-paper-plane"></i> SEND MESSAGE
           </button>
         </form>
