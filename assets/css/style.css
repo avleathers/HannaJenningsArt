@@ -66,6 +66,49 @@ em {
   min-height: 400px;
 }
 
+/* View More, View Less Button */
+.load-more-btn {
+  width: 150px;
+  line-height: 40px;
+  border-radius: 2px;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: block;
+  background:   #494747;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.load-more-btn:hover {
+  background: #333;
+}
+
+.loaded {
+  display: none;
+}
+
+#load-more {
+  display: none;
+}
+
+/* Image Magnifier */
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 150px;
+  height: 150px;
+}
+
 /* Fourth image (Contact) */
 .bgimg-4 {
   background-image: url("../images/primarycolors.jpg");
@@ -79,6 +122,11 @@ em {
 .w3-hover-opacity {
   cursor: pointer;
 }
+
+/* -------
+   Contact
+  --------*/
+
 
 /* -----
   Footer
@@ -94,11 +142,3 @@ em {
     padding-bottom: 10px;
     line-height: 1.5em;
   }
-
-/* Turn off parallax scrolling for tablets and phones */
-/* @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-} */
