@@ -66,7 +66,7 @@ em {
   min-height: 400px;
 }
 
-/* View More, View Less Button */
+/* View More Button */
 .load-more-btn {
   width: 150px;
   line-height: 40px;
@@ -82,14 +82,6 @@ em {
 
 .load-more-btn:hover {
   background: #333;
-}
-
-.loaded {
-  display: none;
-}
-
-#load-more {
-  display: none;
 }
 
 /* Image Magnifier */
@@ -123,10 +115,23 @@ em {
   cursor: pointer;
 }
 
+#portfolio2 {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
 /* -------
    Contact
   --------*/
 
+  /* Portfolio Page */
+.w3-container {
+  padding: 64px!important;
+}
+
+.w3-row .w3-third img {
+  padding: 12px;
+}
 
 /* -----
   Footer

@@ -28,47 +28,6 @@ function toggleFunction() {
     }
 }
 
-// Slideshow Indicators script
-function currentDiv(n) {
-    showDivs(slideIndex = n);
-  }
-  
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-    }
-    x[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " w3-opacity-off";
-  }
-
-// Load More functionality
-  $(function (){
-
-    $(".w3-col-hidden").slice(0, 6).show();
-
-    $("#loadMore").on('click', function (e) {
-
-        e.prefentDefault();
-
-        $(".w3-col-hidden; hidden").slice(0, 3).slideDown();
-        if ($("w3-col-hidden:hidden").length == 0) {
-            $("#load").fadeOut('slow');
-        }
-
-        $('html,body').animate({
-            scrollTop: $(this).offset().top
-        }, 1500);
-    });
-});
-
 
 // Magnifying Glass over Images
 function magnify(img, zoom) {
