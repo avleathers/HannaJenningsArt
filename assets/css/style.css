@@ -1,0 +1,149 @@
+/* ---------------
+  Nav Bar and Logo 
+  ---------------- */
+  .w3-top {
+    background-color: black;
+    max-height: 100px;
+    color: whitesmoke;
+  }
+  
+  .myNavbar {
+    margin-top: 20px;
+    width: 30%;
+    height: 15%;
+    text-align: right;
+  }
+  
+  .logo-image{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:15%;
+    height: 15%;
+    float: left;
+    position: relative;
+  }  
+  
+body,h1,h2,h3,h4,h5,h6 {font-family: "Philosopher", sans-serif;}
+body, html {
+  height: 100%;
+  color: rgb(43, 39, 39);
+  line-height: 1.8;
+  scroll-behavior: smooth;
+}
+
+em {
+  font-size: 20px;
+}
+
+.social {
+  block-size: 70px;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url("../images/primarycolors.jpg");
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("../images/primarycolors.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Shop) */
+.bgimg-3 {
+  background-image: url("../images/primarycolors.jpg");
+  min-height: 400px;
+}
+
+/* View More Button */
+.load-more-btn {
+  width: 150px;
+  line-height: 40px;
+  border-radius: 2px;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: block;
+  background:   #494747;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.load-more-btn:hover {
+  background: #333;
+}
+
+/* Image Magnifier */
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 150px;
+  height: 150px;
+}
+
+/* Fourth image (Contact) */
+.bgimg-4 {
+  background-image: url("../images/primarycolors.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {
+  letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+  cursor: pointer;
+}
+
+#portfolio2 {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+/* -------
+   Contact
+  --------*/
+
+  /* Portfolio Page */
+.w3-container {
+  padding: 64px!important;
+}
+
+.w3-row .w3-third img {
+  padding: 12px;
+}
+
+/* -----
+  Footer
+  ------ */
+  footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.5em;
+  }
