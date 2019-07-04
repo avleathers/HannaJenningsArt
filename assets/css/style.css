@@ -116,18 +116,20 @@ em {
 }
 
 #portfolio2 {
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#shop2 {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /* -------
    Contact
   --------*/
 
-  /* Portfolio Page */
-.w3-container {
-  padding: 64px!important;
-}
+  /* Portfolio and Shop Pages */
 
 .w3-row .w3-third img {
   padding: 12px;
