@@ -51,9 +51,9 @@ function currentDiv(n) {
 
 
 // Magnifying Glass over Images
-function magnify(img, zoom) {
+function magnify(imgID, zoom) {
   var img, glass, w, h, bw;
-  img = document.getElementById(img
+  img = document.getElementById(imgID
 );
   /*create magnifier glass:*/
   glass = document.createElement("DIV");
@@ -62,7 +62,7 @@ function magnify(img, zoom) {
   img.parentElement.insertBefore(glass, img
 );
   /*set background properties for the magnifier glass:*/
-  glass.style.backgroundImage = "url('" + img + "')";
+  glass.style.backgroundImage = "url('" + img.src + "')";
   glass.style.backgroundRepeat = "no-repeat";
   glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
   bw = 6;
@@ -91,7 +91,7 @@ function magnify(img, zoom) {
     glass.style.left = (x - w) + "px";
     glass.style.top = (y - h) + "px";
     /*display what the magnifier glass "sees":*/
-    glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+    result.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
   }
   function getCursorPos(e) {
     var a, x = 0, y = 0;
