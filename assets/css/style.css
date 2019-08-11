@@ -40,6 +40,8 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+
+/* Body, heading, and image styling */
   
 body,h1,h2,h3,h4,h5,h6 {font-family: "Philosopher", sans-serif;}
 body, html {
@@ -49,12 +51,21 @@ body, html {
   scroll-behavior: smooth;
 }
 
+img {
+  width: 100%;
+  box-shadow: 2px 2px 2px 2px rgb(148, 26, 30);
+  cursor: pointer;
+}
+
 em {
   font-size: 20px;
 }
 
 .social {
   block-size: 70px;
+  width: auto;
+  box-shadow: none;
+
 }
 
 /* Create a Parallax Effect */
