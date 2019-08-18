@@ -1,0 +1,24 @@
+{
+  "name": "hannajenningsart",
+  "version": "1.0.0",
+  "description": "Hanna Jennings Artist website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avleathers/HannaJenningsArt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avleathers/HannaJenningsArt/issues"
+  },
+  "homepage": "https://github.com/avleathers/HannaJenningsArt#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.3.0"
+  }
+}
