@@ -53,14 +53,15 @@ function currentDiv(n) {
 // Magnifying Glass over Images
 function magnify(imgID, zoom) {
   var img, glass, w, h, bw;
-  img = document.getElementById(imgID
-);
+  img = document.getElementById(imgID);
+
   /*create magnifier glass:*/
   glass = document.createElement("DIV");
   glass.setAttribute("class", "img-magnifier-glass");
+
   /*insert magnifier glass:*/
-  img.parentElement.insertBefore(glass, img
-);
+  img.parentElement.insertBefore(glass, img);
+
   /*set background properties for the magnifier glass:*/
   glass.style.backgroundImage = "url('" + img.src + "')";
   glass.style.backgroundRepeat = "no-repeat";
@@ -68,6 +69,7 @@ function magnify(imgID, zoom) {
   bw = 6;
   w = glass.offsetWidth / 2;
   h = glass.offsetHeight / 2;
+
   /*execute a function when someone moves the magnifier glass over the image:*/
   glass.addEventListener("mousemove", moveMagnifier);
   img.addEventListener("mousemove", moveMagnifier);
@@ -108,39 +110,5 @@ function magnify(imgID, zoom) {
   }
 }
 
-// // Code for sending email 
-// $(document).ready(function () {
-//   var myForm = $("#myemailform");
-//   var modal = $('#myModal');
-//   var modalMessage = modal.find('.modal-body');
+magnify("myimage", 3);
 
-//   myForm.submit(function (evt) {
-//       evt.preventDefault();
-
-//       var data = {
-//           from: $("#from").val(),
-//           name: $("#name").val(),
-//           text: $("#text").val()
-//       };
-
-//       modal.modal();
-//       modalMessage.text("Sending E-mail...Please wait");
-
-//       $.ajax({
-//           url: "/send",
-//           type: "POST",
-//           data: JSON.stringify(data),
-//           contentType: "application/json; charset=utf-8",
-//           success: function (res) {
-//               if (res === "sent") {
-//                   modalMessage.text("Email has been sent. Thank you " + data.name + "!");
-//               }
-//           }
-//       });
-
-//       // Clear form after submission
-//       $('#from').val("");
-//       $('#name').val("");
-//       $('#text').val("");
-//   });
-// });

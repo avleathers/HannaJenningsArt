@@ -25,7 +25,7 @@ app.get('/',function(req,res){
 });
 app.post('/send',function(req,res){
     var mailOptions={
-        to: "designs@missyleathers.com",
+        to: "hannajartist@gmail.com",
         subject : `Contact Form Submission - ${req.body.name}`,
         text : 'From: ' + req.body.from + '\n\n' + req.body.text
     }
